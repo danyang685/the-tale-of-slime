@@ -1,5 +1,5 @@
 import * as PIXI from 'pixi.js'
-import { WIDTH, HEIGHT } from '../common'
+import { WIDTH, HEIGHT } from '../common.js'
 
 const GROUND_BLOCK_WIDTH = 256
 const GROUND_BLOCK_HEIGHT = 256

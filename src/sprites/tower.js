@@ -1,5 +1,5 @@
 import * as PIXI from 'pixi.js'
-import { BLOOD_INDICATOR_WIDTH, BloodIndicator } from './bloodindicator';
+import { BLOOD_INDICATOR_WIDTH, BloodIndicator } from './bloodindicator.js';
 
 export class Tower {
     /**
