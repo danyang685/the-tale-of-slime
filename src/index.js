@@ -99,13 +99,19 @@ class Game {
             this.hero_location = this.hero_walker.next_position()
             this.camera_center = this.hero_location
             if (this.walker_indicator == null) {
-                this.walker_indicator = new WalkerIndicator(this.stage)
+                this.walker_indicator = new WalkerIndicator(this.stage,this.hero_walker.target_position,this.hero_walker.frame_required)
             }
             this.walker_indicator.update(this.transform_to_screen_space(this.hero_walker.target_position))
             if (this.hero_walker.end()) {
                 this.hero_walker = null
                 this.walker_indicator.remove()
                 this.walker_indicator = null
+            }
+            // if the walker indicator was moved
+            else if (this.hero_walker.target_position.x!=this.walker_indicator.target.x || this.hero_walker.target_position.y!=this.walker_indicator.target.y)
+            {
+                this.walker_indicator.remove()
+                this.walker_indicator = new WalkerIndicator(this.stage,this.hero_walker.target_position,this.hero_walker.frame_required)
             }
         }
     }
