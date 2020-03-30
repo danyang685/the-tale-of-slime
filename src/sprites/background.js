@@ -1,4 +1,4 @@
-import * as PIXI from 'pixi.js'
+import * as PIXI from '../pixi.js'
 import { WIDTH, HEIGHT } from '../common.js'
 
 export class Background {
