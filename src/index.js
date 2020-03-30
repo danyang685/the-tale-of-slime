@@ -1,7 +1,7 @@
-import * as PIXI from 'pixi.js'
+import * as PIXI from './pixi.js'
 import { HeroWalker, Background, Ground, Hero, WalkerIndicator, Bullet, Slime, BulletIndicator, Flipflops, Tower } from './sprites'
 import { WIDTH, HEIGHT } from './common'
-import $ from 'jquery'
+import $ from './jquery'
 
 let type = "WebGL"
 if (!PIXI.utils.isWebGLSupported()) {
