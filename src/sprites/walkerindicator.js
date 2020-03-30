@@ -1,5 +1,3 @@
-import * as PIXI from '../pixi.js'
-
 const WALKER_INDICATOR_COLOR = 0xAA8F4E
 
 export class WalkerIndicator {

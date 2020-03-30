@@ -1,4 +1,4 @@
-import * as PIXI from '../pixi.js'
+
 
 export const BLOOD_INDICATOR_WIDTH = 30
 

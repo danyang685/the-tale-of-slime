@@ -1,4 +1,4 @@
-import * as PIXI from '../pixi.js'
+
 
 const BULLET_INDICATOR_COLOR = 0x934734;
 

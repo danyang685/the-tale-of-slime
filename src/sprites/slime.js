@@ -1,4 +1,3 @@
-import * as PIXI from '../pixi.js'
 import { BloodIndicator } from './bloodindicator.js'
 
 const BLOOD_INDICATOR_WIDTH = 30
