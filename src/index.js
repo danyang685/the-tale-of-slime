@@ -1,5 +1,5 @@
 import * as PIXI from './pixi.js'
-import { HeroWalker, Background, Ground, Hero, WalkerIndicator, Bullet, Slime, BulletIndicator, Flipflops, Tower } from './sprites'
+import { HeroWalker, Background, Ground, Hero, WalkerIndicator, Bullet, Slime, BulletIndicator, Flipflops, Tower } from './sprites/index.js'
 import { WIDTH, HEIGHT } from './common.js'
 import $ from './jquery.js'
 
