@@ -28,7 +28,7 @@ export class Slime {
         this.radius = radius
         this.in_stage = false
         this.giant = giant
-        this.blood = new BloodIndicator(stage, 0xE76F51)
+        this.blood = new BloodIndicator(stage, 0xB30000)
     }
 
     remove() {

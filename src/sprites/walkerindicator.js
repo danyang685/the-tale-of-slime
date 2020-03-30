@@ -1,4 +1,4 @@
-const WALKER_INDICATOR_COLOR = 0xAA8F4E
+const WALKER_INDICATOR_COLOR = 0xFFFFFF
 
 export class WalkerIndicator {
     /**
@@ -7,14 +7,15 @@ export class WalkerIndicator {
     make_indicator_sprite() {
         const sprite = new PIXI.Graphics
         sprite.beginFill(WALKER_INDICATOR_COLOR)
-        sprite.drawCircle(0, 0, 5, 5)
+        sprite.drawCircle(0, 0, 30, 30)
         sprite.endFill()
         sprite.zIndex = -20
         return sprite
     }
 
     update_indicator_sprite() {
-        const radius = (this.current_frame / 3) % 7
+        const radius = 30/(this.current_frame+1)
+        console.log(this.current_frame)
         this.sprite.clear()
         this.sprite.beginFill(WALKER_INDICATOR_COLOR)
         this.sprite.drawCircle(0, 0, radius, radius)
@@ -47,6 +48,8 @@ export class WalkerIndicator {
         }
         this.update_indicator_sprite()
         this.current_frame = this.current_frame + 1
+        console.log(this.sprite.position)
+        console.log(screen_position)
         this.sprite.position = screen_position
     }
 }

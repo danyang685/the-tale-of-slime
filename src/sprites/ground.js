@@ -35,7 +35,7 @@ export class Ground {
      */
     add_sprite(x, y) {
         const key = this.key_of(x, y)
-        const sprite = this.make_ground_sprite((x + y) % 2 == 0 ? 0xD4FCC3 : 0xFFF5B2)
+        const sprite = this.make_ground_sprite((x + y) % 2 == 0 ? 0x39ac39 : 0x53c653)
         this.ground_sprites[key] = { sprite, x, y }
         this.stage.addChild(sprite)
     }

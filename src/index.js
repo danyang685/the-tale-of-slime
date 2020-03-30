@@ -9,7 +9,7 @@ if (!PIXI.utils.isWebGLSupported()) {
 PIXI.utils.sayHello(type)
 
 let app = new PIXI.Application({ width: WIDTH, height: HEIGHT, backgroundColor: 0xFFFFFF })
-
+app.renderer.resize(window.innerWidth, window.innerHeight)
 document.body.appendChild(app.view)
 
 class Game {
